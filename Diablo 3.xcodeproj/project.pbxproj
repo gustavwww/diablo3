@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		11CF2F3B49CCFCDF4CAB5131 /* Pods_Diablo_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B02D886FD74C1F85D984B3 /* Pods_Diablo_3.framework */; };
 		9714F5821E12FD2D0045E4E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714F5811E12FD2D0045E4E2 /* AppDelegate.swift */; };
-		9714F5841E12FD2D0045E4E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714F5831E12FD2D0045E4E2 /* ViewController.swift */; };
+		9714F5841E12FD2D0045E4E2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714F5831E12FD2D0045E4E2 /* MainVC.swift */; };
 		9714F5871E12FD2D0045E4E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9714F5851E12FD2D0045E4E2 /* Main.storyboard */; };
 		9714F5891E12FD2D0045E4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9714F5881E12FD2D0045E4E2 /* Assets.xcassets */; };
 		9714F58C1E12FD2D0045E4E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9714F58A1E12FD2D0045E4E2 /* LaunchScreen.storyboard */; };
+		97A1DE321E130AED003575FD /* firstLbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE311E130AED003575FD /* firstLbl.swift */; };
+		97A1DE341E131915003575FD /* HeroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE331E131915003575FD /* HeroVC.swift */; };
+		97A1DE361E131A67003575FD /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE351E131A67003575FD /* Account.swift */; };
+		97A1DE381E131B8C003575FD /* CharCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE371E131B8C003575FD /* CharCell.swift */; };
+		97A1DE3A1E131C0F003575FD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE391E131C0F003575FD /* Character.swift */; };
+		97A1DE3C1E131D15003575FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE3B1E131D15003575FD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03B02D886FD74C1F85D984B3 /* Pods_Diablo_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diablo_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9714F57E1E12FD2D0045E4E2 /* Diablo 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diablo 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9714F5811E12FD2D0045E4E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9714F5831E12FD2D0045E4E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9714F5831E12FD2D0045E4E2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		9714F5861E12FD2D0045E4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9714F5881E12FD2D0045E4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9714F58B1E12FD2D0045E4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9714F58D1E12FD2D0045E4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A1DE311E130AED003575FD /* firstLbl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstLbl.swift; sourceTree = "<group>"; };
+		97A1DE331E131915003575FD /* HeroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroVC.swift; sourceTree = "<group>"; };
+		97A1DE351E131A67003575FD /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		97A1DE371E131B8C003575FD /* CharCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharCell.swift; sourceTree = "<group>"; };
+		97A1DE391E131C0F003575FD /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		97A1DE3B1E131D15003575FD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AEE2F566DFD3CA852772C472 /* Pods-Diablo 3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diablo 3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diablo 3/Pods-Diablo 3.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9D782FAB98AA597A45D430 /* Pods-Diablo 3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diablo 3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diablo 3/Pods-Diablo 3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,11 +85,11 @@
 				9736F8061E12FD5200D03BD1 /* View */,
 				9736F8071E12FD5F00D03BD1 /* Controller */,
 				9714F5811E12FD2D0045E4E2 /* AppDelegate.swift */,
-				9714F5831E12FD2D0045E4E2 /* ViewController.swift */,
 				9714F5851E12FD2D0045E4E2 /* Main.storyboard */,
 				9714F58A1E12FD2D0045E4E2 /* LaunchScreen.storyboard */,
 				9714F5881E12FD2D0045E4E2 /* Assets.xcassets */,
 				9714F58D1E12FD2D0045E4E2 /* Info.plist */,
+				97A1DE3B1E131D15003575FD /* Constants.swift */,
 			);
 			path = "Diablo 3";
 			sourceTree = "<group>";
@@ -85,6 +97,8 @@
 		9736F8051E12FD4A00D03BD1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				97A1DE351E131A67003575FD /* Account.swift */,
+				97A1DE391E131C0F003575FD /* Character.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -92,6 +106,8 @@
 		9736F8061E12FD5200D03BD1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				97A1DE311E130AED003575FD /* firstLbl.swift */,
+				97A1DE371E131B8C003575FD /* CharCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -99,6 +115,8 @@
 		9736F8071E12FD5F00D03BD1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9714F5831E12FD2D0045E4E2 /* MainVC.swift */,
+				97A1DE331E131915003575FD /* HeroVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -236,8 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9714F5841E12FD2D0045E4E2 /* ViewController.swift in Sources */,
+				97A1DE361E131A67003575FD /* Account.swift in Sources */,
+				9714F5841E12FD2D0045E4E2 /* MainVC.swift in Sources */,
+				97A1DE3A1E131C0F003575FD /* Character.swift in Sources */,
 				9714F5821E12FD2D0045E4E2 /* AppDelegate.swift in Sources */,
+				97A1DE341E131915003575FD /* HeroVC.swift in Sources */,
+				97A1DE321E130AED003575FD /* firstLbl.swift in Sources */,
+				97A1DE381E131B8C003575FD /* CharCell.swift in Sources */,
+				97A1DE3C1E131D15003575FD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
