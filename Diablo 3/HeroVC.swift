@@ -11,6 +11,8 @@ import UIKit
 class HeroVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var topLbl: UILabel!
+    
     
     var acc: Account!
     
@@ -19,6 +21,8 @@ class HeroVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        topLbl.text = acc.name
         
     }
     
@@ -72,6 +76,11 @@ class HeroVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    @IBAction func backPressed(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
     
     
     

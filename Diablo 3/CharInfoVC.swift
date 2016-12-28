@@ -16,7 +16,6 @@ class CharInfoVC: UIViewController {
         super.viewDidLoad()
         
         
-        print(char.name)
         
         
     }
