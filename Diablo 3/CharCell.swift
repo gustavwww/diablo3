@@ -14,10 +14,22 @@ class CharCell: UITableViewCell {
     @IBOutlet weak var charImage: UIImageView!
     @IBOutlet weak var charName: UILabel!
     @IBOutlet weak var charLevel: UILabel!
+    @IBOutlet weak var view: UIView!
     
-    func configureCell() {
+    var char: Character!
+    
+    func configureCell(char: Character) {
         
+        self.char = char
         
+        charName.text = char.name
+        charLevel.text = "Level \(char.level)"
+        
+        charImage.image = UIImage(named: "\(char.clas)\(char.gender)")
+        
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 3, height: 1)
+        view.layer.shadowOpacity = 1
         
     }
     

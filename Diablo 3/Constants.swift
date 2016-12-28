@@ -23,7 +23,7 @@ class Constants {
         
         self.battleTag = battleTag.replacingOccurrences(of: "#", with: "%23")
         
-        URL = "https://eu.api.battle.net/d3/profile/\(self.battleTag)/?locale=en_GB&apikey=v5p92v64hfnd8nmy8vjtzs2429ry5nmc"
+        URL = "https://eu.api.battle.net/d3/profile/" + self.battleTag + "/?locale=en_GB&apikey=v5p92v64hfnd8nmy8vjtzs2429ry5nmc"
         
     }
     

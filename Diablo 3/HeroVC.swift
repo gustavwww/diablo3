@@ -12,6 +12,8 @@ class HeroVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var acc: Account!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,27 +24,61 @@ class HeroVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return UITableViewCell()
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CharCell", for: indexPath) as? CharCell {
+            
+            
+            cell.configureCell(char: acc.characters[indexPath.row])
+            
+            return cell
+        }
+        
+        return CharCell()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        
+        return acc.characters.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let table = tableView.cellForRow(at: indexPath) as? CharCell {
+            
+            performSegue(withIdentifier: "CharacterInfo", sender: table)
+            
+        }
+        
     }
-    */
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? CharInfoVC {
+            
+            if let table = sender as? CharCell {
+                
+                destination.char = table.char
+                
+            }
+            
+            
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }

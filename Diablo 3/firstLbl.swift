@@ -15,7 +15,7 @@ class firstLbl: UILabel {
         super.draw(rect)
         
         self.layer.masksToBounds = true
-        self.layer.cornerRadius = 22.0
+        self.layer.cornerRadius = 13.0
         
     }
 

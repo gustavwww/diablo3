@@ -67,7 +67,7 @@ class Character {
     }
     
     var isDead: Bool!
-    var Seasonal: Bool!
+    var isSeasonal: Bool!
     var isHardCore: Bool!
     
     

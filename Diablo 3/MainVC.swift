@@ -13,6 +13,8 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
+    var acc: Account!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,9 @@ class MainVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let destination = segue.destination as? MainVC {
+        if let destination = segue.destination as? HeroVC {
+            
+            destination.acc = self.acc
             
             
         }
@@ -35,7 +39,26 @@ class MainVC: UIViewController {
     @IBAction func searchPressed(_ sender: Any) {
         //Download data and check if valid.
         
+        if textField.text == nil || textField.text == "" {
+            
+            return
+        }
         
+        self.acc = Account()
+        Constants.sharedInstance.initRequest(battleTag: textField.text!)
+        
+        textField.text = ""
+        
+        self.acc.downloadData {
+            
+            if self.acc.isValid == false {
+                print("Account invalid")
+                return
+            }
+            
+            self.performSegue(withIdentifier: "CharacterTable", sender: nil)
+            
+        }
         
     }
 

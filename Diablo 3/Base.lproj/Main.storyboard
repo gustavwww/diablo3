@@ -33,7 +33,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name#Tag" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yS4-e8-TpT">
-                                <rect key="frame" x="66" y="318" width="242" height="30"/>
+                                <rect key="frame" x="66.5" y="318.5" width="242" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="242" id="9du-KJ-mEe"/>
                                     <constraint firstAttribute="height" constant="30" id="eR2-vR-CyJ"/>
@@ -43,7 +43,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your battle tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moS-JE-zkr" customClass="firstLbl" customModule="Diablo_3" customModuleProvider="target">
-                                <rect key="frame" x="66" y="278" width="242" height="32"/>
+                                <rect key="frame" x="66.5" y="278.5" width="242" height="32"/>
                                 <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="lYT-jp-Mt0"/>
@@ -55,7 +55,7 @@
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCv-P4-Slk">
-                                <rect key="frame" x="66" y="387" width="242" height="39"/>
+                                <rect key="frame" x="66.5" y="387.5" width="242" height="39"/>
                                 <color key="backgroundColor" red="0.72470140706806285" green="0.23212463108856779" blue="0.29647714941489234" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Search">
@@ -87,7 +87,7 @@
                     </view>
                     <connections>
                         <outlet property="textField" destination="yS4-e8-TpT" id="MKw-zm-6rq"/>
-                        <segue destination="NpB-b0-uBw" kind="showDetail" identifier="CharacterTable" id="srV-Rg-NlZ"/>
+                        <segue destination="NpB-b0-uBw" kind="presentation" identifier="CharacterTable" modalTransitionStyle="flipHorizontal" id="srV-Rg-NlZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -106,38 +106,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper033-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="FbB-bN-uzO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dark-Forest-Moon-Wallpaper-Design" translatesAutoresizingMaskIntoConstraints="NO" id="Act-Vm-2Gy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diablo_III_Large_transparency" translatesAutoresizingMaskIntoConstraints="NO" id="FbB-bN-uzO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="305"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="305" id="hWr-Pl-mDf"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bzg-V5-nXB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bzg-V5-nXB">
                                 <rect key="frame" x="0.0" y="305" width="375" height="362"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharCell" rowHeight="73" id="JBl-pB-V0X" customClass="CharCell" customModule="Diablo_3" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CharCell" rowHeight="73" id="JBl-pB-V0X" customClass="CharCell" customModule="Diablo_3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JBl-pB-V0X" id="6az-26-iyD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGO-ol-Dnl">
-                                                    <rect key="frame" x="8" y="8" width="359" height="56"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="57"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark-Forest-Moon-Wallpaper-Design" translatesAutoresizingMaskIntoConstraints="NO" id="zKa-2W-5vW">
                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="56"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J55-SG-6Pp">
-                                                            <rect key="frame" x="8" y="3" width="50" height="50"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crusader0" translatesAutoresizingMaskIntoConstraints="NO" id="J55-SG-6Pp">
+                                                            <rect key="frame" x="8" y="4" width="50" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="7OX-0t-E2Z"/>
                                                                 <constraint firstAttribute="width" constant="50" id="rMh-FG-t58"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HeroName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77v-07-mqZ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bob" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77v-07-mqZ">
                                                             <rect key="frame" x="66" y="13" width="136" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -170,10 +175,13 @@
                                                 <constraint firstItem="pGO-ol-Dnl" firstAttribute="trailing" secondItem="6az-26-iyD" secondAttribute="trailingMargin" id="jQX-rI-rQB"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="charImage" destination="J55-SG-6Pp" id="zy0-PB-my8"/>
                                             <outlet property="charLevel" destination="dIj-vx-Pc7" id="BDD-vV-k5p"/>
                                             <outlet property="charName" destination="77v-07-mqZ" id="8EW-GE-CVc"/>
+                                            <outlet property="view" destination="pGO-ol-Dnl" id="kTi-2f-R2t"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -181,8 +189,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YAP-QU-vie" firstAttribute="top" secondItem="Act-Vm-2Gy" secondAttribute="bottom" id="15m-qQ-5HL"/>
+                            <constraint firstItem="Act-Vm-2Gy" firstAttribute="top" secondItem="B0t-VX-b9i" secondAttribute="top" id="1WJ-XI-MVZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Act-Vm-2Gy" secondAttribute="trailing" id="6Ye-Ek-ZKc"/>
                             <constraint firstItem="FbB-bN-uzO" firstAttribute="top" secondItem="B0t-VX-b9i" secondAttribute="top" id="8zx-UT-wIX"/>
                             <constraint firstItem="YAP-QU-vie" firstAttribute="top" secondItem="bzg-V5-nXB" secondAttribute="bottom" id="9vA-Nk-qm6"/>
+                            <constraint firstItem="Act-Vm-2Gy" firstAttribute="leading" secondItem="B0t-VX-b9i" secondAttribute="leading" id="CiH-We-oYb"/>
                             <constraint firstItem="FbB-bN-uzO" firstAttribute="leading" secondItem="B0t-VX-b9i" secondAttribute="leading" id="GD3-kC-MKN"/>
                             <constraint firstAttribute="trailing" secondItem="FbB-bN-uzO" secondAttribute="trailing" id="HTk-s2-9rs"/>
                             <constraint firstItem="bzg-V5-nXB" firstAttribute="top" secondItem="FbB-bN-uzO" secondAttribute="bottom" id="IxF-pJ-Ysn"/>
@@ -190,19 +202,39 @@
                             <constraint firstAttribute="trailing" secondItem="bzg-V5-nXB" secondAttribute="trailing" id="tFn-vi-m0O"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8dX-cz-h0g"/>
                     <connections>
                         <outlet property="tableView" destination="bzg-V5-nXB" id="KWk-Ze-3Qk"/>
+                        <segue destination="dPQ-pC-bq2" kind="showDetail" identifier="CharacterInfo" id="Lw6-DA-p1i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVb-eh-QG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180" y="138.98050974512745"/>
         </scene>
+        <!--Char InfoVC-->
+        <scene sceneID="1Pf-Ev-VLi">
+            <objects>
+                <viewController id="dPQ-pC-bq2" customClass="CharInfoVC" customModule="Diablo_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vTG-G2-Ytv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vw4-sw-VZs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gun-9b-gTI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNS-Br-4Am" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Dark-Forest-Moon-Wallpaper-Design" width="1920" height="1200"/>
         <image name="Diablo_3_High_quality_wallpapers0" width="1920" height="1200"/>
         <image name="Diablo_III_Large_transparency" width="1280" height="853"/>
-        <image name="wallpaper033-1920x1080" width="1920" height="1080"/>
+        <image name="crusader0" width="218" height="220"/>
     </resources>
 </document>

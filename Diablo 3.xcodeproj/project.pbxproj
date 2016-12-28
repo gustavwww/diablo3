@@ -19,6 +19,7 @@
 		97A1DE381E131B8C003575FD /* CharCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE371E131B8C003575FD /* CharCell.swift */; };
 		97A1DE3A1E131C0F003575FD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE391E131C0F003575FD /* Character.swift */; };
 		97A1DE3C1E131D15003575FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1DE3B1E131D15003575FD /* Constants.swift */; };
+		97D4341E1E13F49C00319CBA /* CharInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4341D1E13F49C00319CBA /* CharInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		97A1DE371E131B8C003575FD /* CharCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharCell.swift; sourceTree = "<group>"; };
 		97A1DE391E131C0F003575FD /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		97A1DE3B1E131D15003575FD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		97D4341D1E13F49C00319CBA /* CharInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharInfoVC.swift; sourceTree = "<group>"; };
 		AEE2F566DFD3CA852772C472 /* Pods-Diablo 3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diablo 3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diablo 3/Pods-Diablo 3.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9D782FAB98AA597A45D430 /* Pods-Diablo 3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diablo 3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diablo 3/Pods-Diablo 3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 			children = (
 				9714F5831E12FD2D0045E4E2 /* MainVC.swift */,
 				97A1DE331E131915003575FD /* HeroVC.swift */,
+				97D4341D1E13F49C00319CBA /* CharInfoVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A1DE361E131A67003575FD /* Account.swift in Sources */,
+				97D4341E1E13F49C00319CBA /* CharInfoVC.swift in Sources */,
 				9714F5841E12FD2D0045E4E2 /* MainVC.swift in Sources */,
 				97A1DE3A1E131C0F003575FD /* Character.swift in Sources */,
 				9714F5821E12FD2D0045E4E2 /* AppDelegate.swift in Sources */,
