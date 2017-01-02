@@ -18,21 +18,33 @@ class Account {
     private var _paraSeaHard: Int!
     
     var name: String {
+        if _name == nil {
+            _name = ""
+        }
         
         return _name
     }
     
     var guildName: String {
+        if _guildName == nil {
+            _guildName = ""
+        }
         
         return _guildName
     }
     
     var paragonSeason: Int {
+        if _paraSea == nil {
+            _paraSea = 0
+        }
         
         return _paraSea
     }
     
     var paragonSeasonHardCore: Int {
+        if _paraSeaHard == nil {
+            _paraSeaHard = 0
+        }
         
         return _paraSeaHard
     }
@@ -49,8 +61,6 @@ class Account {
         
         Alamofire.request(constants.URL).responseJSON { response in
             
-            print(constants.URL)
-            print(constants.battleTag)
             let result = response.result
             
             if let dict = result.value as? Dictionary<String, AnyObject> {
@@ -61,6 +71,7 @@ class Account {
                     self.isValid = false
                     self.reason = reason
                     
+                    complete()
                     return
                 }
                 //Account has been found...
@@ -138,14 +149,14 @@ class Account {
                         }
                         
                      self.characters.append(char)
-                        complete()
+                    
                     }
                     
                 }
                 
                 
             }
-         
+         complete()
         }
         
     }

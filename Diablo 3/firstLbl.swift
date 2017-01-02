@@ -14,8 +14,12 @@ class firstLbl: UILabel {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        self.layer.masksToBounds = true
-        self.layer.cornerRadius = 13.0
+        layer.masksToBounds = true
+        layer.cornerRadius = 13.0
+        
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.7
+        layer.shadowOffset = CGSize(width: 2, height: 1)
         
     }
 

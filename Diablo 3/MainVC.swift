@@ -14,11 +14,12 @@ class MainVC: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     var acc: Account!
-    
+    var loadingView: LoadingView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadingView = LoadingView()
         
         
     }
@@ -39,10 +40,13 @@ class MainVC: UIViewController {
     @IBAction func searchPressed(_ sender: Any) {
         //Download data and check if valid.
         
+        
         if textField.text == nil || textField.text == "" {
             
             return
         }
+        loadingView.setupView(view: self.view, msg: .loading)
+        
         
         self.acc = Account()
         Constants.sharedInstance.initRequest(battleTag: textField.text!)
@@ -52,10 +56,17 @@ class MainVC: UIViewController {
         self.acc.downloadData {
             
             if self.acc.isValid == false {
-                print("Account invalid")
+                self.loadingView.removeView()
+                
+                if let textBox = self.textField as? StartTextField {
+                    
+                    textBox.shake()
+                    
+                }
                 return
             }
             
+            self.loadingView.removeView()
             self.performSegue(withIdentifier: "CharacterTable", sender: nil)
             
         }
